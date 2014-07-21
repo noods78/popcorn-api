@@ -38,7 +38,7 @@ module.exports = {
       // filter elements
 
       if (data.keywords) {
-        var words = data.keywords.split("%20");
+        var words = data.keywords.split(" ");
         var regex = data.keywords.toLowerCase();
         if(words.length > 1) {
           var regex = "^";
