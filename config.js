@@ -10,12 +10,9 @@ module.exports = {
 		'us-chi.ptnet',
 		'us-mia.ptnet',
 		'us-dal.ptnet',
-		'us-sjc.ptnet',
 		'za.ptnet',
 		'br.ptnet',
-		'sg.ptnet',
 		'uk.ptnet',
-		'ca.ptnet'
 	],
 	map: {
 		'louie': 'louie-2010',
