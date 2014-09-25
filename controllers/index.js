@@ -1,5 +1,5 @@
 var os = require("os");
-var config = require('./config');
+var config = require('../config');
 module.exports = {
 	getIndex: function(req, res) {
 		res.json({
