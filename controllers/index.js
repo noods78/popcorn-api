@@ -6,7 +6,7 @@ module.exports = {
 			status: 'online', 
 			uptime: process.uptime() | 0, 
 			server: os.hostname(),
-			updated: config.lastRefresh.toUTCString() || 'Unknown'
+			updated: config.lastRefresh ? config.lastRefresh.toUTCString() : 'Unknown'
 		});
 	}
 }
