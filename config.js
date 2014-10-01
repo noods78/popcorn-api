@@ -1,37 +1,6 @@
-module.exports = {
-	master: false,
-	port: 5000,
-	workers: 2,
-	scrapeTime: '00 00 3,15 * * *',
-	scrapeTtl: 1000 * 60 * 60 * 10,
-	pageSize: 50,
-	dbHosts: [
-		'fr.ptnet',
-		'us-chi.ptnet',
-		'us-mia.ptnet',
-		'us-dal.ptnet',
-		'za.ptnet',
-		'br.ptnet',
-		'uk.ptnet',
-	],
-	map: {
-		'louie': 'louie-2010',
-		'battlestar-galactica': 'battlestar-galactica-2003',
-		'the-killing': 'the-killing-us',
-		'hawaii-five-0-2010': 'hawaii-fiveo-2010',
-		'the-goldbergs': 'the-goldbergs-2013',
-		'vikings-us': 'vikings',
-		'resurrection-us': 'resurrection',
-		'golden-boy': 'golden-boy-2013',
-		'the-office': 'the-office-us',
-		'the-fosters': 'the-fosters-2013',
-		'brooklyn-nine-nine': 'brooklyn-ninenine',
-		'cracked': 'cracked-2013',
-		'the-good-guys': 'the-good-guys-2010',
-		'black-box': 'the-black-box',
-		'hank': 'hank-2009',
-		'legit': 'legit-2013',
-		'power-2014': 'power',
-		'scandal-us': 'scandal-2012',
-	}
-}
+var fs = require('fs');
+
+module.exports = function(env) {
+	env = env || process.env.NODE_ENV;
+	return require('./config/' + env + '.json');
+};
