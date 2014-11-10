@@ -33,5 +33,6 @@ module.exports = {
 		'legit': 'legit-2013',
 		'power-2014': 'power',
 		'scandal-us': 'scandal-2012',
+		'reign': 'reign-2013'
 	}
 }
