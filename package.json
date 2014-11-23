@@ -13,7 +13,7 @@
     "mongoose": "^3.8.16",
     "request": "^2.36.0",
     "response-time": "^1.0.0",
-    "trakt": "0.0.6"
+    "trakt": "git+https://github.com/popcorn-official/node-trakt.git"
   },
   "engines": {
     "node": ">=0.10.x",
